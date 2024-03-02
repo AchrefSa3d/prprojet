@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier de Marbre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style >
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem
+
+</style>
+<body>
+    <header>
+        <h1>Khmais saad pour marbre granit</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produit">Produits</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+        <h2>Bienvenue à l'Atelier de Marbre</h2>
+        <p>Nous sommes une entreprise spécialisée dans la fabrication et la vente de produits en marbre de haute qualité. Nous offrons une large gamme de produits allant des comptoirs de cuisine aux sculptures décoratives en passant par les tuiles de sol et les revêtements muraux.</p>
+        </section>
+        <section id="produit">
+        <h3>Nos produits</h3>
+        <ul>
+            <li>Comptoirs de cuisine</li>
+            <li>Tuiles de sol</li>
+            <li>Revêtements muraux</li>
+            <li>Sculptures décoratives</li>
+        </ul>
+        </section>
+        <section id="galerie">
+        <h3>Galerie</h3>
+        <p>Découvrez quelques-unes de nos créations en marbre dans notre galerie d'images.</p>
+        <img src="1.jpg" alt="Galerie d'images">
+        <img src="2.jpg" alt="Galerie d'images">
+        <img src="3.jpg" alt="Galerie d'images">
+        <img src="4.jpg" alt="Galerie d'images">
+        </section>
+
+        <section id="contact">
+        <h3>Contact</h3>
+        <p>Pour toute demande d'information ou de devis, n'hésitez pas à nous contacter via le formulaire ci-dessous:</p>
+        <form action="envoyer.php" method="POST">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Atelier de Marbre</p>
+    </footer>
+</body>
+</html>
